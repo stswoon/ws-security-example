@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>WS local stomp</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "@stomp/stompjs": "https://ga.jspm.io/npm:@stomp/stompjs@7.0.0/esm6/index.js"
+        }
+      }
+
+    </script>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+
+<button onclick="token()">Get Token</button>
+<br/>
+
+<button onclick="connect()">Connect</button>
+<br/>
+
+<input id="subscribe-topic" value="testTopic"/>
+<button onclick="subscribe()">Subscribe</button>
+<button onclick="unsubscribe()">Unsubscribe</button>
+<br/>
+
+<input id="send-topic" value="testTopic"/>
+<input id="send-message" value="testMessage"/>
+<button onclick="send()">Send</button>
+<br/>
+
+<button onclick="disconnect()">Disconnect</button>
+
+</body>
+</html>
